@@ -11,9 +11,9 @@ THe following python codes are included for producing figures in the paper:
 
 `make_paper_ppsd_fig.py` - Panel B of figure 2
 
-`windspeed_comp.py` - Figure 3 (Note that the summary RMS data produced by this script is saved in the file WS_SPviking_rms.csv)
+`windspeed_comp.py` - Figure 3 and panel C of figure 1 (Note that the summary RMS data produced by this script is saved in the file WS_SPviking_rms.csv)
 
-`plot_atten_curve.py` - Figure 5 (Note that this uses interpolated attenuation curves from the atten_curves subdirectory)
+`plot_atten_curve.py` - Figure 5 (Note that this uses interpolated attenuation curves from the `atten_curves` subdirectory)
 
 The specific data used in these codes including specific filenames can be downloaded at the archive preserved at [this archive](http://doi.org/FILLINDOI).  This data should be saved in a subdirectory called `datafiles` in order to use the python codes as written.
 
