@@ -10,12 +10,12 @@ import matplotlib.pyplot as plt
 # datafile = "SP_EH_12-1_12-13.mseed"
 # datafile = "SP_SHU_MH_12-1_12-19.mseed"
 # metadata = "metadata.xml"
-datafile = "combined.SP.1201-1220.merged.mseed"
-metadata = "ELYS0_dl12-26.xml"
-cMHdata = "CRUI3.SP.mseed"
-cMHmeta = "CRUI3.xml"
-cEHdata = "CRUI1-2.mseed"
-cEHmeta = "CRUI1.xml"
+datafile = "datafiles/combined.SP.1201-1220.merged.mseed"
+metadata = "datafiles/ELYS0_dl12-26.xml"
+cMHdata = "datafiles/CRUI3.SP.mseed"
+cMHmeta = "datafiles/CRUI3.xml"
+cEHdata = "datafiles/CRUI1-2.mseed"
+cEHmeta = "datafiles/CRUI1.xml"
 
 #first get cruise ppsd info
 stMHc = read(cMHdata)
