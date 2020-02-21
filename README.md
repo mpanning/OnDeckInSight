@@ -8,7 +8,9 @@ The authoritative source for the archived InSight data, including all instrument
 THe following python codes are included for producing figures in the paper:
 
 `make_ppsd_panelA_fig.py` - Panel A of figure 2
+
 `make_paper_ppsd_fig.py` = Panel B of figure 2
+
 `windspeed_comp.py` - Figure 3
 
 The specific data used in these codes including specific filenames can be downloaded at the archive preserved at [this archive](http://doi.org/FILLINDOI)
