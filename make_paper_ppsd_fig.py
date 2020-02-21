@@ -12,8 +12,10 @@ import numpy as np
 # datafile = "SP_EH_12-1_12-13.mseed"
 # datafile = "SP_SHU_MH_12-1_12-19.mseed"
 # metadata = "metadata.xml"
-ondeckdatafile = "datafiles/combined.SP.1201-1220.merged.mseed"
-ondeckmetadata = "datafiles/ELYS0_dl12-26.xml"
+# ondeckdatafile = "datafiles/combined.SP.1201-1220.merged.mseed"
+# ondeckmetadata = "datafiles/ELYS0_dl12-26.xml"
+ondeckdatafile = "datafiles/ELYS0.allseispress.dl0204.mseed"
+ondeckmetadata = "datafiles/ELYS0.dl0129.response.xml"
 cMHdata = "datafiles/CRUI3.SP.mseed"
 cMHmeta = "datafiles/CRUI3.xml"
 cEHdata = "datafiles/CRUI1-2.mseed"
@@ -149,7 +151,8 @@ plt.xlim((0.02, 100))
 plt.xscale('log')
 plt.xlabel('Period (s)')
 plt.ylim((-200, -50))
-plt.ylabel(r'Amplitude (m$^2$/s$^4$/Hz [dB])')
+plt.ylabel(r'Acceleration power (m$^2$/s$^4$/Hz [dB])')
+plt.grid(which='both')
 plt.legend()
 # plt.show()
 plt.savefig(plotfile)
