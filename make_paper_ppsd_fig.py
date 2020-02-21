@@ -12,12 +12,12 @@ import numpy as np
 # datafile = "SP_EH_12-1_12-13.mseed"
 # datafile = "SP_SHU_MH_12-1_12-19.mseed"
 # metadata = "metadata.xml"
-ondeckdatafile = "combined.SP.1201-1220.merged.mseed"
-ondeckmetadata = "ELYS0_dl12-26.xml"
-cMHdata = "CRUI3.SP.mseed"
-cMHmeta = "CRUI3.xml"
-cEHdata = "CRUI1-2.mseed"
-cEHmeta = "CRUI1.xml"
+ondeckdatafile = "datafiles/combined.SP.1201-1220.merged.mseed"
+ondeckmetadata = "datafiles/ELYS0_dl12-26.xml"
+cMHdata = "datafiles/CRUI3.SP.mseed"
+cMHmeta = "datafiles/CRUI3.xml"
+cEHdata = "datafiles/CRUI1-2.mseed"
+cEHmeta = "datafiles/CRUI1.xml"
 
 #first get cruise ppsd info
 print("Working on cruise data")
@@ -63,8 +63,8 @@ ppsd.add(st_select)
 (ondeck05pd, ondeck05psd) = ppsd.get_percentile(percentile=5)
 (ondeck95pd, ondeck95psd) = ppsd.get_percentile(percentile=95)
 
-weeklydir = './weeklies/'
-metadata = 'ELYSE.all.dl1105.response.xml'
+weeklydir = 'datafiles/weeklies/'
+metadata = 'datafiles/ELYSE.all.dl1105.response.xml'
 
 # On ground SP
 print("Working on on-ground data")
