@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 # datafile = "datafiles/combined.SP.1201-1220.merged.mseed"
 # metadata = "datafiles/ELYS0_dl12-26.xml"
 datafile = "datafiles/ELYS0.allseispress.dl0204.mseed"
-metadata = "datafiles/ELYS0.dl0129.response.xml"
+metadata = "datafiles/ELYS0.all.dl0226.response.xml"
 cMHdata = "datafiles/CRUI3.SP.mseed"
 cMHmeta = "datafiles/CRUI3.xml"
 cEHdata = "datafiles/CRUI1-2.mseed"

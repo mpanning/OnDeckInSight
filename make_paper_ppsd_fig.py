@@ -15,7 +15,8 @@ import numpy as np
 # ondeckdatafile = "datafiles/combined.SP.1201-1220.merged.mseed"
 # ondeckmetadata = "datafiles/ELYS0_dl12-26.xml"
 ondeckdatafile = "datafiles/ELYS0.allseispress.dl0204.mseed"
-ondeckmetadata = "datafiles/ELYS0.dl0129.response.xml"
+# ondeckmetadata = "datafiles/ELYS0.dl0129.response.xml"
+ondeckmetadata = "datafiles/ELYS0.all.dl0226.response.xml"
 cMHdata = "datafiles/CRUI3.SP.mseed"
 cMHmeta = "datafiles/CRUI3.xml"
 cEHdata = "datafiles/CRUI1-2.mseed"
@@ -66,7 +67,7 @@ ppsd.add(st_select)
 (ondeck95pd, ondeck95psd) = ppsd.get_percentile(percentile=95)
 
 weeklydir = 'datafiles/weeklies/'
-metadata = 'datafiles/ELYSE.all.dl1105.response.xml'
+metadata = 'datafiles/ELYSE.all.dl0226.response.xml'
 
 # On ground SP
 print("Working on on-ground data")

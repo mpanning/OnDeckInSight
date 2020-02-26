@@ -16,7 +16,7 @@ import csv
 
 SPdatafile = "datafiles/SHU68.ELYS0.mseed"
 windsdatafile = "datafiles/SHU_windspeed.mseed"
-metadata = "datafiles/ELYS0.xml"
+metadata = "datafiles/ELYS0.all.dl0226.response.xml"
 
 # Read SP data and remove instrument response and plot acceleration
 st_SP = read(SPdatafile)[1:] # First trace has bad response for some reason
@@ -129,7 +129,7 @@ for tr in st_SP:
 # Read windspeed data
 st_WS = read(windsdatafile).select(channel='VWS')
 
-(st_SP + st_WS).plot(equal_scale=False, method='full')
+# (st_SP + st_WS).plot(equal_scale=False, method='full')
 
 # Create a stream just with winds that overlap SP data
 st_windoverlap = Stream()
@@ -140,11 +140,11 @@ for tr in st_SP:
     st_windoverlap += st_temp
 
 st_windoverlap = st_windoverlap.merge().split()
-(st_windoverlap+st_SP).plot(method='full', equal_scale=False)
+# (st_windoverlap+st_SP).plot(method='full', equal_scale=False)
 # One more plot with original
-(st_windoverlap+st_SP_IR).plot(method='full', equal_scale=False)
+# (st_windoverlap+st_SP_IR).plot(method='full', equal_scale=False)
 st_windoverlap.decimate(15) #reduce sampling to 30 seconds
-(st_windoverlap+st_SP).plot(method='full', equal_scale=False)
+# (st_windoverlap+st_SP).plot(method='full', equal_scale=False)
 print(st_windoverlap)
 
 
