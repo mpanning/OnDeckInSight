@@ -25,7 +25,7 @@ THe following python codes are included for producing figures in the paper:
 
 `plot_prob.py`, `plot_prob_selfnoise.py`, `plot_prob_lownoise.py` - plotting panels of figure 7
 
-The specific data used in these codes including specific filenames can be downloaded at the archive preserved at [this archive](http://doi.org/FILLINDOI).  This data should be saved in a subdirectory called `datafiles` in order to use the python codes as written.
+The specific data used in these codes including specific filenames can be downloaded at the NASA Open Data Portal archive preserved at [this archive](http://doi.org/10.25966/na0g-cr11).  This data should be saved expanded as a subdirectory called `datafiles` in order to use the python codes as written.
 
 All software in this repository is licensed using GNU General Public License version 3 as described in the file `COPYING`
 
